@@ -1,0 +1,7 @@
+on join:
+    if {Joins::*} does not contain player's uuid:
+        add player's uuid to {Joins::*}
+        set join massage to "&c%player% &6Join &7(First)"
+on join:
+    execute console command "mv spawn %player%"
+    execute console command "title %player% title [{"text":"-=","color":"gold"},{"text":" ようこそ","color":"red"},{"text":" =-","color":"gold"}]"

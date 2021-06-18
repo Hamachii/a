@@ -1,0 +1,35 @@
+command /gs1 <text> <text>:
+    permission: op
+    trigger:
+        if arg-1 is "close":
+            execute console command "mv delete game1"
+            execute console command "mvconfirm"
+            broadcast "&cGame1サーバーがシャットダウンされました。 &7by %player%"
+            broadcast "次回のゲームスタートをお待ちください。"
+        if arg-1 is "world":
+            execute console command "mv clone temp%arg-2% game1"
+            broadcast "&cGame1サーバーを準備できました！ゲーム開始をお待ちください。"
+            disable PVP [in game1]
+        if arg-1 is "start":
+            broadcast "&6&n3"
+            wait 1 seconds
+            broadcast "&e&n2"
+            wait 1 seconds
+            broadcast "&f&n1"
+            wait 1 seconds
+            broadcast "&c&nゲームスタート！"
+            enable PvP [in game1]
+        if arg-1 is "help":
+            send "Help" to player
+            send "/gs1 close" to player
+            send "ゲーム終了" to player
+            send "/gs1 world 1" to player
+            send "草原マップワールド用意" to player
+            send "/gs1 world 2" to player
+            send "草原2(ゲーム崩壊)(temp2)マップワールド用意" to player
+            send "/gs1 world 4" to player
+            send "弓ステージ(ゲーム崩壊)(temp4)マップワールド用意" to player
+            send "/gs1 world 3" to player
+            send "洞窟(temp3)マップワールド用意" to player
+            send "/gs1 start" to player
+            send "カウント" to player

@@ -1,0 +1,30 @@
+command /go:
+    trigger:
+        execute console command "mvtp %player% hub"
+        execute console command "mvconfirm"
+        clear player's inventory
+        send "&a転送されました"
+command /hub:
+    trigger:
+        execute console command "mvtp %player% hub"
+        execute console command "mvconfirm"
+        clear player's inventory
+        send "&a転送されました"
+command /lobby:
+    trigger:
+        execute console command "mvtp %player% hub"
+        execute console command "mvconfirm"
+        clear player's inventory
+        send "&a転送されました"
+command /spawn:
+    trigger:
+        execute console command "mvtp %player% hub"
+        execute console command "mvconfirm"
+        clear player's inventory
+        send "&a転送されました"
+command /back:
+    trigger:
+        execute console command "mvtp %player% hub"
+        execute console command "mvconfirm"
+        clear player's inventory
+        send "&a転送されました"
